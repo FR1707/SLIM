@@ -3,111 +3,134 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SLIM - Emagreça com Saúde</title>
+  <title>SLIM - Queime gordura e reduza o apetite</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #ffffff;
-      color: #0d1a26;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(#ffffff, #f5f5f5);
+      color: #333;
     }
     header {
-      background-color: #00cc66;
-      color: white;
-      padding: 2rem;
+      background-color: #0f0f0f;
+      padding: 20px;
       text-align: center;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
+    header img {
+      height: 40px;
     }
-    header p {
-      margin-top: 0.5rem;
-      font-size: 1.2rem;
-    }
-    .banner {
+    .hero {
+      padding: 40px 20px;
       text-align: center;
-      padding: 2rem 1rem;
+      background: #e0f8e9;
     }
-    .banner img {
-      width: 250px;
-      max-width: 90%;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0, 204, 102, 0.5);
+    .hero h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
     }
-    .cta-button {
-      background-color: #00cc66;
-      color: white;
-      padding: 1rem 2rem;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 5px;
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+    .hero img {
+      width: 180px;
+      margin-bottom: 20px;
+    }
+    .price {
+      background: #ffd700;
       display: inline-block;
-      margin-top: 1.5rem;
+      padding: 10px 20px;
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #000;
+      border-radius: 10px;
     }
-    .cta-button:hover {
-      background-color: #00b359;
+    .benefits {
+      padding: 30px;
+      background: #fff;
     }
-    .section {
-      padding: 2rem 1rem;
+    .benefits h2 {
       text-align: center;
-    }
-    .section h2 {
-      color: #00cc66;
-      font-size: 1.8rem;
+      margin-bottom: 20px;
     }
     .benefits ul {
       list-style: none;
       padding: 0;
+      max-width: 600px;
+      margin: auto;
     }
     .benefits li {
-      margin: 0.5rem 0;
-      font-size: 1.1rem;
+      margin-bottom: 10px;
+      font-size: 1.1em;
+      padding-left: 20px;
+      position: relative;
+    }
+    .benefits li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: green;
+    }
+    .cta {
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .cta a {
+      background-color: #27ae60;
+      color: white;
+      padding: 15px 30px;
+      text-decoration: none;
+      font-size: 1.3em;
+      border-radius: 8px;
+      display: inline-block;
+      margin: 10px;
+    }
+    .urgency {
+      text-align: center;
+      font-size: 1em;
+      color: #d63031;
+      font-weight: bold;
     }
     footer {
-      background-color: #eaffea;
       text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      color: #333;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #666;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>SLIM</h1>
-    <p>Queime gordura de forma saudável e natural</p>
+    <img src="logo.png" alt="Nutricorp Fit">
   </header>
 
-  <div class="banner">
-    <img src="produto.jpg" alt="Imagem do Produto SLIM">
-    <br>
-    <a href="#comprar" class="cta-button">COMPRAR AGORA</a>
-  </div>
+  <section class="hero">
+    <h1>SLIM 1000mg - Controle seu apetite e queime gordura naturalmente</h1>
+    <p>Suplemento com óleo de cártamo, coco, chia, vitamina E e cromo.</p>
+    <img src="ce42002e-4230-43d5-91b5-d24daf246191.jpg" alt="Produto Slim">
+    <div class="price">PROMOÇÃO R$ 79,90</div>
+    <p class="urgency">🔥 Mais de 1.500 unidades vendidas - Estoque limitado!</p>
+  </section>
 
-  <div class="section benefits">
-    <h2>Benefícios do Slim</h2>
+  <section class="benefits">
+    <h2>Benefícios do SLIM</h2>
     <ul>
-      <li>Queima de gordura localizada</li>
-      <li>Redução do apetite</li>
-      <li>Melhora do metabolismo</li>
-      <li>100% natural e seguro</li>
+      <li>Reduz o apetite de forma natural</li>
+      <li>Ajuda na queima de gordura corporal</li>
+      <li>Melhora o metabolismo da glicose</li>
+      <li>Promove saciedade com fibras e óleos naturais</li>
+      <li>Ação antioxidante e anti-inflamatória</li>
+      <li>Zero glúten, zero lactose e zero açúcar</li>
     </ul>
-  </div>
+  </section>
 
-  <div class="section">
-    <h2>Depoimentos</h2>
-    <p>"Comecei a tomar Slim e em 2 semanas já vi resultado. Super recomendo!" - Cliente Satisfeito</p>
-  </div>
-
-  <div class="section" id="comprar">
-    <h2>Oferta Exclusiva</h2>
-    <p>Aproveite a promoção por tempo limitado!</p>
-    <a href="https://seusite.com/checkout" class="cta-button">GARANTIR MEU SLIM</a>
-  </div>
+  <section class="cta">
+    <a href="https://wa.me/SEUNUMERO?text=Tenho%20interesse%20no%20SLIM%20da%20Nutricorp%20por%20R$79,90">FALAR NO WHATSAPP</a>
+    <a href="https://SEULINKDEPAGAMENTO.com">COMPRAR AGORA</a>
+  </section>
 
   <footer>
-    <p>&copy; 2025 Nutricorp. Todos os direitos reservados.</p>
+    © 2025 Nutricorp Fit. Produto autorizado e fabricado com responsabilidade.
   </footer>
 </body>
 </html>
